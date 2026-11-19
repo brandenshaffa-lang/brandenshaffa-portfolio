@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Branden Shaffa | Portfolio</title>
+  <meta name="description" content="E-portfolio of Branden Shaffa, Computer Science, University of St. Thomas.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <span class="brand">Branden Shaffa</span>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects &amp; Experiences</a>
+      <a href="#resume">Resume</a>
+      <a href="https://github.com/brandenshaffa-lang/brandenshaffa-portfolio#readme">Reflection</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Branden Shaffa</h1>
+    <p class="tagline">Computer Science &middot; University of St. Thomas &middot; Class of 2026</p>
+    <p class="links">
+      <a href="mailto:BrandenShaffa@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/branden-shaffa">LinkedIn</a>
+      <a href="https://github.com/brandenshaffa-lang">GitHub</a>
+    </p>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a Computer Science major at the University of St. Thomas, a Dean's List student, and a member of the football team. I like turning messy information into something people can act on: dashboards, simulations, and tools that make a decision easier to understand.</p>
+      <p>My technical side is Python, SQL, Tableau, and Power BI, plus experience with AI coding tools such as Claude Code, Cursor, and GitHub Copilot. My communication and business coursework, my internships, and my work in client account support taught me the other half: asking what the audience actually needs, checking details carefully, and explaining results in plain language. I've worked with partners and stakeholders at the Minnesota Historical Society, Pace Mayo Manufacturing, and RBC Wealth Management, and with a team of four on a sustainability game for the St. Thomas Office of Sustainability.</p>
+      <p>What I bring to a team is that combination: I can build the analysis or the tool, and I can also make sure it is accurate, clear, and useful to the people who rely on it.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-box"><h3>Languages</h3><p>Python, SQL, Java, C, C++, C#, JavaScript, TypeScript, HTML/CSS, R, Bash</p></div>
+        <div class="skill-box"><h3>Analytics &amp; BI</h3><p>Tableau, Power BI, Excel, Power Query, DAX, Looker Studio, Google Analytics, HubSpot, Salesforce</p></div>
+        <div class="skill-box"><h3>Data &amp; Libraries</h3><p>pandas, NumPy, Matplotlib, Jupyter, PostgreSQL, MySQL, SQLite</p></div>
+        <div class="skill-box"><h3>Tools &amp; AI</h3><p>Git, GitHub, VS Code, Claude Code, Cursor, GitHub Copilot, ChatGPT, Linux</p></div>
+        <div class="skill-box"><h3>Professional</h3><p>Project and stakeholder communication, process improvement, attention to detail, requirements gathering, presenting, teamwork</p></div>
+        <div class="skill-box"><h3>Methods</h3><p>Data modeling, statistical analysis, machine learning, A/B testing, market research, data visualization</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects &amp; Experiences</h2>
+
+      <!-- 1. CAPSTONE -->
+      <article class="entry">
+        <div class="type">CS / Technical &middot; Capstone</div>
+        <h3>Day in the Life: A Sustainability Choose-Your-Path Game</h3>
+        <p class="role">Team of 4 &middot; Partner: UST Office of Sustainability &middot; Fall 2026</p>
+        <figure>
+          <img src="assets/day-in-the-life.jpg" alt="Day in the Life start screen with four day choices over a St. Thomas campus photo">
+          <figcaption>Figure 1. The game's start screen, where the player chooses what kind of day to play.</figcaption>
+        </figure>
+        <p><a href="https://elijahparkos.github.io/CISC480-Day-In-the-Life/">Play the live game</a> &middot; <a href="https://github.com/ElijahParkos/CISC480-Day-In-the-Life">View the code on GitHub</a></p>
+        <p><strong>Description:</strong> A browser game where students make everyday decisions (move-in, move-out, a Sunday) and see how each choice affects sustainability. It is built with vanilla JavaScript, HTML, and CSS, and the story is stored in a JSON file so the team and the Office of Sustainability can change content without touching the game code.</p>
+        <p><strong>My contribution:</strong> I designed and coded the scoring system and wrote the consequence messages for the move-in and move-out scenarios. I also fixed the ending-screen integration with my teammates' code and wrote the coding guidelines and user story slides for our team.</p>
+        <dl class="soar">
+          <dt>Situation</dt><dd>Our team of four was building a choose-your-path game for the Office of Sustainability, with each person owning a different piece: story, visuals, ending summaries, and scoring.</dd>
+          <dt>Obstacle</dt><dd>My scoring code had to work with code written by others and with branching paths of different lengths. When I connected it to the ending screen, the category didn't show because the ending screen was triggered too early by a placeholder block in a teammate's file.</dd>
+          <dt>Action</dt><dd>I traced the problem step by step, removed the placeholder trigger with my teammate's knowledge, and called the ending summary directly from the game logic when a path ended.</dd>
+          <dt>Result</dt><dd>The game now ends on the right screen and shows the player's sustainability category, and the scoring works for any branch the team adds.</dd>
+        </dl>
+        <div class="failure">
+          <h4>Failure &rarr; Learning &rarr; Change</h4>
+          <p><strong>What I was trying to do:</strong> Build the first-draft scoring system for Demo 1, where each choice was ranked and the total decided the result.</p>
+          <p><strong>What didn't go well:</strong> That version assumed every player answered the same number of questions in the same order. Once the team added branching, the totals weren't comparable between paths, so I had to rework it.</p>
+          <p><strong>What I learned and do differently now:</strong> I now ask how a feature will connect to the rest of the system before I build it. I rebuilt the scoring around low, mid, and high levels and an average instead of a total, which works for paths of any length, and I check with teammates early before locking in a design.</p>
+        </div>
+        <div class="keywords"><span>JavaScript</span><span>JSON</span><span>scoring system</span><span>branching narrative</span><span>Git</span><span>teamwork</span><span>sustainability</span></div>
+      </article>
+
+      <!-- 2. A* GAME -->
+      <article class="entry">
+        <div class="type">CS / Technical</div>
+        <h3>AI-Based Sustainability Game: A* Search and Monte Carlo Simulation</h3>
+        <p class="role">Artificial Intelligence &middot; Spring 2026 &middot; Group project</p>
+        <figure>
+          <img src="assets/astar-simulation.png" alt="Monte Carlo simulation results comparing greedy and sustainable A* strategies over 500 runs">
+          <figcaption>Figure 2. Monte Carlo results over 500 runs: Strategy B (sustainable A*) vs. Strategy A (greedy).</figcaption>
+        </figure>
+        <p><strong>Description:</strong> I built an A* search agent in Python that navigates a campus graph of 16 nodes and 42 edges and optimizes a sustainability-focused route. I then ran a Monte Carlo simulation of 500 runs comparing a greedy BFS strategy against the sustainable A* strategy under randomized energy and congestion conditions. The sustainable A* strategy scored more than double the greedy one on average (24.70 vs. 11.64) and had higher trivia accuracy (74.5% vs. 62.2%). Routing through LEED-certified green buildings also led players through locations where they answered trivia more accurately, so the campus's real sustainability infrastructure became a scoring advantage. A greedy approach finds routes faster but misses the sustainability rewards built into the campus graph.</p>
+        <p><strong>My contribution:</strong> This was a group project. I built the A* search agent and the Monte Carlo simulation myself.</p>
+        <div class="keywords"><span>Python</span><span>A* search</span><span>Monte Carlo simulation</span><span>graph algorithms</span><span>sustainability</span></div>
+      </article>
+
+      <!-- 3. K-MEANS -->
+      <article class="entry">
+        <div class="type">CS / Technical &middot; Data Science</div>
+        <h3>The Culture of St. Thomas: Survey Analysis</h3>
+        <p class="role">Data Mining and Machine Learning &middot; Spring 2026 &middot; Group project</p>
+        <figure>
+          <img src="assets/kmeans-clusters.png" alt="Cluster means table and parallel coordinate plots for four student clusters">
+          <figcaption>Figure 3. Cluster means and parallel coordinate plots for the four student clusters (JMP).</figcaption>
+        </figure>
+        <p><strong>Description:</strong> I analyzed a survey dataset of 674 St. Thomas students to find indicators of college major selection, then used K-means clustering to group students into behavioral profiles based on study habits, religious engagement, financial goals, and academic performance.</p>
+        <p><strong>Findings:</strong> The clusters were Ambitious Students (41.5%), who had the highest financial ambition and chose St. Thomas for its academic reputation; Faith-Driven Scholars (36.7%), who had the highest spirituality and most study hours and chose it for both faith and academics; Disengaged Students (19.9%), who had no strong pull toward the university's academics or mission and were the group most at risk for persistence; and a small outlier group (1.9%). Major choice differed across clusters, with Scholars leaning toward health and biological sciences, Ambitious Students toward business and engineering, and Disengaged Students toward education, humanities, and social science. A decision tree found that scientific-contribution goals (51.6%) and financial-success goals (28.9%) were the most important predictors of major, though its R&sup2; of 0.111 shows that survey variables only partly explain major choice.</p>
+        <p><strong>My contribution:</strong> This was a group project. I ran the K-means clustering, built the decision tree, and made the charts.</p>
+        <div class="keywords"><span>Python</span><span>pandas</span><span>K-means clustering</span><span>decision tree</span><span>statistical analysis</span><span>survey data</span></div>
+      </article>
+
+      <!-- 4. COMMUNICATION -->
+      <article class="entry">
+        <div class="type">Non-CS &middot; Communication (outside my major)</div>
+        <h3>Cultural Appropriation in Marketing</h3>
+        <p class="role">Communication of Race, Class, and Gender &middot; Spring 2025 &middot; Group presentation</p>
+        <figure>
+          <img src="assets/communication-slide.jpg" alt="Presentation slide on Native American imagery in brands, including Land O'Lakes and Dior Sauvage">
+          <figcaption>Figure 4. A slide from our presentation on Native American imagery in brands.</figcaption>
+        </figure>
+        <p><strong>Description:</strong> Our group studied how brands use cultural imagery in advertising and where that becomes cultural appropriation. We looked at campaigns such as Land O'Lakes, which used Native American imagery, and Aunt Jemima, which used a Black stereotype. The main idea we explored is that appropriation often happens when brands "borrow" a culture without context, permission, or respect.</p>
+        <p><strong>My contribution:</strong> I analyzed the public response to these campaigns and developed recommendations for how brands can communicate responsibly in the future, then presented my section to the class.</p>
+        <div class="keywords"><span>communication</span><span>marketing</span><span>race, class, and gender</span><span>cultural appropriation</span><span>ethics</span><span>research</span></div>
+      </article>
+
+      <!-- 5. PACE MAYO -->
+      <article class="entry">
+        <div class="type">Interdisciplinary &middot; Business Internship</div>
+        <h3>Data Modeling Analyst Intern, Pace Mayo Manufacturing</h3>
+        <p class="role">Apr 2026 &ndash; Aug 2026</p>
+        <p><strong>Description:</strong> I worked independently on market research for a startup developing a sustainable building material by researching the market it was entering. My analysis combined data modeling with business strategy. This was my own project, and I presented the results to leadership.</p>
+        <dl class="soar">
+          <dt>Situation</dt><dd>A startup making a recycled-content plywood alternative needed to know where its product could compete.</dd>
+          <dt>Obstacle</dt><dd>The market had many unknowns: material weaknesses, competitors across countries, and which market to enter first.</dd>
+          <dt>Action</dt><dd>I used sourced pricing data to show plywood's weaknesses, including price volatility of more than 50% in a single year. I mapped a competitor landscape of 20+ companies across 11 countries, and I researched and sized the HVAC packaging market, a $524.9B global market.</dd>
+          <dt>Result</dt><dd>I identified HVAC and appliance packaging as an uncontested entry point for the recycled-content alternative and presented the findings to company leadership.</dd>
+        </dl>
+        <div class="keywords"><span>market analysis</span><span>data modeling</span><span>competitor research</span><span>sustainable materials</span><span>strategy</span></div>
+      </article>
+
+      <!-- 6. RBC -->
+      <article class="entry">
+        <div class="type">Professional Experience &middot; Financial Services</div>
+        <h3>Account Support, RBC Wealth Management</h3>
+        <p class="role">Aug 2026 &ndash; Present</p>
+        <p><strong>Description:</strong> I maintain accurate client account records in a regulated financial services environment. I process contact and account information updates and verify about 900 client accounts per week against account records before outbound mailings, which lowers the risk of misdirected or incorrect correspondence. My work keeps client data clean and current so advisors and operations teams can rely on it.</p>
+        <p><strong>My contribution:</strong> This is an individual role. My responsibility is accuracy and meeting deadlines.</p>
+        <div class="keywords"><span>financial services</span><span>data accuracy</span><span>attention to detail</span><span>regulated environment</span><span>operations</span></div>
+      </article>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="assets/Shaffa_Resume.pdf">Download my resume (PDF)</a></p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Branden Shaffa &middot; Built with HTML and CSS &middot; Hosted on GitHub Pages</footer>
+</body>
+</html>
